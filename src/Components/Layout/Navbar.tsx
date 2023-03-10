@@ -13,12 +13,15 @@ const Navbar = () => {
 			<Box
 				w={'90%'}
 				margin={'5px auto'}
+				display={'flex'}
+				alignItems={'center'}
 			>
-				<Icon
+				<Logo w={50} position={'relative'} top={-2} />
+				{/* <Icon
 					w={50}
 				>
 					<Logo />
-				</Icon>
+				</Icon> */}
 			</Box>
     </Box>
   )
