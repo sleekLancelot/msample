@@ -1,4 +1,4 @@
-import React, {useEffect, useCallback} from 'react'
+import React, {useEffect, useCallback, memo} from 'react'
 import { Progress } from '@chakra-ui/react'
 import { useTimer } from '../../Hooks'
 
@@ -7,7 +7,7 @@ const ProgressBar = ({
 }: {
     callback: Function,
 }) => {
-    const {progress, sec} = useTimer(0.3)
+    const {progress, sec} = useTimer(0.5)
 
     const funcToCall = useCallback(() => {
         return callback()
@@ -22,4 +22,4 @@ const ProgressBar = ({
   )
 }
 
-export {ProgressBar}
+export default memo(ProgressBar)

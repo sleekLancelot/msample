@@ -1,8 +1,7 @@
 import React from 'react'
 import { Tbody, Tr, Td, Button, Icon, Badge, Progress } from '@chakra-ui/react'
 import { DeleteIcon } from '@chakra-ui/icons'
-import { useTimer } from '../../Hooks'
-import { ProgressBar } from './ProgressBar'
+import {default as ProgressBar} from './ProgressBar'
 
 interface TableContentProp {
 	getTableBodyProps: any
@@ -19,8 +18,6 @@ const TableContent = ({
     iconAction,
     iconActionParam,
 }: TableContentProp) => {
-	// const {progress} = useTimer(0.5)
-
   return (
     <Tbody
       {...getTableBodyProps()}
