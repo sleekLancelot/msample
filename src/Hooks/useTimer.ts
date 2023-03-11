@@ -23,6 +23,7 @@ const useTimer = (mins = 0.75) => {
     progress,
     minutes,
     seconds,
+    sec,
   };
 }
 

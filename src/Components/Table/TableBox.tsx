@@ -8,7 +8,7 @@ import { TableHeader } from './TableHeader'
 
 interface TableProp {
     data: Array<any>
-    iconAction?: Function
+    iconAction: Function
     iconActionParam?: string
 }
 
